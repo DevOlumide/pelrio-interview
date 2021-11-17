@@ -16,7 +16,7 @@ function Home(){
     const user = {
       firstName: localStorage.firstName
     };
-    Axios.post("http://localhost:4000/auth/fetch", user).then((result) => {
+    Axios.post("http://localhost:4001/auth/fetch", user).then((result) => {
       result.data.map((e) => {
         setFirstName(e.firstName);
         setLastName(e.lastName);
@@ -30,7 +30,7 @@ function Home(){
   
   return(
     <div className="container">
-    <h1>Hey {firstName} we have got a few details about you. See them below</h1>
+    <h1>Hey {localStorage.firstName} we have got a few details about you. See them below</h1>
     <p className=""><b>Your First Name :</b> {firstName} </p>
      <br/>
     <p className=""><b>Your Last Name :</b> {lastName} </p>

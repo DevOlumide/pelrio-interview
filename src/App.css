@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+h1{
+  font-size: 1.266rem !important;
+  font-family: "Josefin Sans" !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input{
+  background-color: transparent !important;
+  color: white !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p{
+  font-size: 0.866rem !important;
+  line-height: 1.5rem !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg{
+  position: absolute !important;
+  height: 100% !important;
+  width: 100vw !important;
+  background-image: url("img/welcome-1.jpeg") !important ;
+  margin: 0;
+  background-size: cover !important;
+  color: white !important;
 }
-
-.App-link {
-  color: #61dafb;
+.bg-red{
+  background-color: red !important;
+  color: white !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.glass{
+  border-radius: 0.5rem !important;
+  position: relative !important;
+  margin: auto auto auto auto;
+  background-color: transparent !important;
+  backdrop-filter: blur(12px) !important;
+  box-shadow:0 10px 30px rgba(0,0,0,0.3) !important;
+  
+  width: 19rem !important;
+  height: 26rem !important;
 }

@@ -17,6 +17,10 @@ const UserModelsSchema = mongoose.Schema({
     type: String,
     required: true
   },
+  userExist: {
+    type: Boolean,
+    default: true
+  },
   date: {
     type: Date,
     default: Date.now
